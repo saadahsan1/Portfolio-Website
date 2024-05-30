@@ -1,0 +1,393 @@
+
+/*Saad Ahsan*/
+/*21i-2965*/
+/*B section*/
+
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Georgia', Georgia, Georgia;
+    box-sizing: border-box;
+    
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+html{
+    scroll-behavior: smooth;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+
+  /* Home Page */
+.Saad-class-hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    
+}
+nav{
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 20px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: orange;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color:red;
+}
+
+.Saad-class-detail{
+    margin-left: 8%;
+    margin-top: 13%;
+}
+.Saad-class-detail h1{
+    font-size: 50px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.Saad-class-detail a{
+    background: #212121;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #fff;
+    margin: 80px 0;
+    border-radius: 10px;
+}
+
+span{
+    color: orange;
+}
+.Saad-class-detail p{
+    color: orange;
+    line-height: 22px;
+}
+
+.Saad-class-images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    border-radius: 50%;
+}
+
+.Saad-class-images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s,left 1s;
+
+}
+.Saad-class-images:hover .shape{
+    bottom: 40px;
+}
+.Saad-class-images:hover .saad{
+    left: 45%;
+    
+}
+
+/* About Page */
+.Saad-class-about{
+    margin-left: 6%;
+    margin-top: 2%;
+    width: 370px;
+}
+.Saad-class-about h1{
+    background: #212121;
+    padding: 30px 10px;
+    text-decoration: none;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin: 30px 50px;
+    border-radius: 20px;
+}
+
+.Saad-class-about p{
+    color: #fff;;
+    line-height: 22px;
+}
+
+
+.Saad-class-tab-titles{
+    margin: 20px 50px ;
+    text-align: center;
+}
+
+.Saad-class-tab-links{
+    margin-right: 120px;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: center;
+    background: #212121;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    color: orange;
+    text-align: center;
+    margin: 50px 20px;
+    border-radius: 20px;
+}
+.Saad-class-tab-links:hover{
+    color:orange;
+}
+
+.Saad-class-tab-contents ul li{
+    list-style: none;
+    margin: 30px 20px;
+    color: #fff;;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.Saad-class-tab-contents ul li span{
+    color:orange;
+    font-size: 14px;
+
+}
+.Saad-class-container{
+    padding: 10px 10%;
+}
+
+/*  Services */
+#services{
+    padding: 30px 100px;
+    text-align: center;
+}
+.Saad-class-services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.Saad-class-sub-title{
+    text-align: right;
+    padding-right: 30%;
+    margin-right: 10%;
+    font-size: 50px;
+    color: orange;
+}
+
+.Saad-class-services-list div{
+    background: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.Saad-class-services-list h2{
+    font-size: 30px;
+    font-weight: 500;
+    color: orangered;
+    
+}
+.Saad-class-services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.Saad-class-services-list div:hover{
+    background: orange;
+    transform: translateY(-10px);
+}
+
+/*  Portfolio */
+#portfolio{
+    padding: 50px 0;
+}
+
+.Saad-class-work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.Saad-class-work{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.Saad-class-work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+/*#ff004f*/
+.Saad-class-layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6),orange);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+
+.Saad-class-layer h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.Saad-class-work:hover img{
+    transform: scale(1.1);
+}
+
+.Saad-class-work:hover .Saad-class-layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid orange;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: orange;
+}
+
+/* Contact*/
+
+.Saad-class-contact-left{
+    flex-basis: 35%;
+}
+.Saad-class-contact-right{
+    flex-basis: 65%;
+}
+.Saad-class-contact-left p{
+    margin-top: 30px;
+
+}
+
+.Saad-class-contact-left p i{
+    color: orange;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.Saad-class-social-icons{
+    margin-top: 30px;
+
+}
+
+.Saad-class-social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.Saad-class-social-icons a:hover{
+    color: orange;
+    transform: translateY(-5px);
+}
+.Saad-class-sub-title1{
+    font-size: 60px;
+    color: orange;
+    font-weight: 600;
+    margin-right: 20%;
+}
+
+.btn.btn2{
+    display: inline-block;
+    background: orange;
+}
+
+.Saad-class-contact-right form{
+    width: 100%;
+} 
+ form input, form textarea{
+    width: 100%;
+    border:0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+
+}
+
+form .btn2{
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.Saad-class-copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+/*Break Points*/
+
+
+/* For desktop: */
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
